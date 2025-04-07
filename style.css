@@ -1,0 +1,124 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #fce3ec, #ffe7e7);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* keeps confetti inside */
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff6f91;
+  }
+  
+  label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  select {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff0f5;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background: #ffd6e0;
+    color: #333;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ffb6c1;
+  }
+  
+  #chaos-btn {
+    background: #ff9aa2;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #chaos-btn:hover {
+    background: #ff6f91;
+  }
+  
+  .spinner {
+    margin: 1rem auto;
+    width: 60px;
+    height: 60px;
+    border: 6px dashed #ffb6c1;
+    border-radius: 50%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(1080deg); }
+  }
+  
+  #loading-text {
+    font-style: italic;
+    color: #999;
+    margin-top: 0.5rem;
+    height: 1.2rem;
+  }
+  
+  #result {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  #confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 5;
+  }
+  
+  .emoji {
+    position: absolute;
+    animation: floaty 3s ease-out forwards;
+    opacity: 0.9;
+  }
+  
+  @keyframes floaty {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) scale(1.2);
+      opacity: 0;
+    }
+  }   

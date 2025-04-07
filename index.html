@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✨ Activity Spinner of Destiny</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Feeling indecisive?</h1>
+    
+    <label for="time-select">How much free time do you have?</label>
+    <select id="time-select">
+      <option value="quick">Just a couple minutes</option>
+      <option value="short">10–15 minutes</option>
+      <option value="medium">30–60 minutes</option>
+      <option value="long">An hour or more</option>
+    </select>
+
+    <button id="spin-btn">Spin & surrender to fate 🔮</button>
+
+    <div id="spinner" class="spinner"></div>
+    <p id="loading-text"></p>
+
+    <button id="chaos-btn">Feeling brave? Surprise me anyway 🎲</button>
+
+    <div id="result"></div>
+
+    <!-- Confetti container is now inside .container -->
+    <div id="confetti"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
